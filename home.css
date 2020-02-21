@@ -1,13 +1,12 @@
 /* MOBILE FIRST */
 
-
 body {
     margin: 0 auto;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     padding: 0;
 }
 
-/* início estilos do menu lateral/mobile */
+/* início nav */
 #check {
     display: none;
 }
@@ -43,7 +42,7 @@ nav a {
     border-bottom: 2px solid #DAE5E8;
 }
 .link:hover {
-    background-color: #050542;
+    background-color: #685d38;
 }
 #check:checked ~ .barra{
     transform: translateX(300px);
@@ -53,7 +52,28 @@ nav a {
     margin-top: 0;
 }
 
-/* fim estilos do menu lateral/mobile */
+
+
+
+/* fim estilos nav */
+
+/* responsividade desktop */
+@media screen and (min-width: 800px) {
+.sumir {
+    display: none;
+}
+
+}
+
+/* @media screen and (max-width: 799px) {
+    .aparecer {
+        display: none;
+    }
+    
+    } */
+
+
+/* responsividade desktop */
 
 
 /* HEADER */
@@ -86,6 +106,45 @@ h1 {
     height: 70px;
     align-self: center;
 }
+/* HEADER */
+
+
+/* FOOTER */
+
+footer {
+	background-color: #DAE5E8;
+    color: #363B40;
+    font-size: 30px;
+    display: flex;
+    justify-content: center
+  }
+
+footer a {
+    text-decoration: none;
+    color: #363B40;
+}
+footer a:hover {
+    text-decoration: none;
+    color: #685d38;
+}
+footer a:active {
+    text-decoration: none;
+    color: #685d38;
+}
+ul {
+    padding-inline-start: unset;
+}
+.list-inline li {
+    display: inline;
+    padding: 0px 8px;
+    }
+
+    footer>div>div:last-child {
+        display: flex;
+        justify-content: center
+    }
+
+/* FOOTER */
 
 /* SECTION USE-GIFT */
 
